@@ -1,1 +1,10 @@
+The evolution of Linkedin
 
+1. One monolithic application with a DB.
+2. Add graph service for storing the relationship of members. This service communicate with the previous application, 
+which is a part of role of previous application.
+3. The database began to have replicas: one main DB and several replica DB to serve people from different areas.
+4. Each section in the previous application was replaced by a new service. Because the site began to have more traffic 
+and it is hard to scale based on the old applicaton.
+4. Micro services are introduced to hold apis and business logic. The are frontend, mid-tier services, and backend data service.
+They also try to use Kafka and Hadoop.
